@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь – Я студент ВШЭ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Обратная связь</h1>
+    <p>Напишите мне, если у вас есть вопросы о моей учёбе в ВШЭ.</p>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="contact.html">Обратная связь</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Форма обратной связи</h2>
+        <p>Пожалуйста, заполните форму ниже. Поля, отмеченные звёздочкой (<span>*</span>), обязательны для заполнения.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+
+                <label for="name">Имя и фамилия *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Электронная почта *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+            </fieldset>
+
+            <fieldset>
+                <legend>Информация о статусе</legend>
+
+                <label for="role">Кто вы?</label>
+                <select id="role" name="role">
+                    <option value="abiturient">Абитуриент</option>
+                    <option value="student">Студент</option>
+                    <option value="teacher">Преподаватель</option>
+                    <option value="other">Другое</option>
+                </select>
+
+                <p>Интересуетесь ли вы поступлением в ВШЭ?</p>
+                <label class="inline">
+                    <input type="radio" name="interest" value="yes"> Да
+                </label>
+                <label class="inline">
+                    <input type="radio" name="interest" value="no"> Нет
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Сообщение</legend>
+
+                <label for="subject">Тема сообщения *</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Текст сообщения *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <p>Какие направления в ВШЭ вас интересуют?</p>
+                <label class="inline">
+                    <input type="checkbox" name="direction" value="it"> Информатика / ИТ
+                </label>
+                <label class="inline">
+                    <input type="checkbox" name="direction" value="economics"> Экономика
+                </label>
+                <label class="inline">
+                    <input type="checkbox" name="direction" value="management"> Менеджмент
+                </label>
+                <label class="inline">
+                    <input type="checkbox" name="direction" value="other"> Другое
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Отправка</legend>
+                <button type="submit">Отправить</button>
+                <button type="reset">Сбросить</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Студент ВШЭ. Контактная страница.</p>
+</footer>
+
+</body>
+</html>
